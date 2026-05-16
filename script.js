@@ -79,9 +79,9 @@ document.addEventListener("keydown", (e) => {
 
 if (startButton) {
   startButton.addEventListener("click", () => {
-  
-    music.load();
+
     music.src = "loveSong.mp3";
+    music.load();
     music.play()
       .catch(err => {
         console.log("Audio blocked or failed:", err);
