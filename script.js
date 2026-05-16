@@ -79,7 +79,14 @@ document.addEventListener("keydown", (e) => {
 
 if (startButton) {
   startButton.addEventListener("click", () => {
-    music.play();
+  
+    music.load();
+  
+    music.play()
+      .catch(err => {
+        console.log("Audio blocked or failed:", err);
+      });
+  
     startButton.style.display = "none";
   });
 }
