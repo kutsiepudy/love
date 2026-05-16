@@ -15,7 +15,7 @@ const slides = [
   {text: "Wanna be my girlfriend?", img: "proposal.png"}
 ];
 
-music.volume = 0.3
+music.volume = 1
 
 function loadSlide(index) {
 
