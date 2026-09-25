@@ -95,3 +95,7 @@ loadSlide(slideIndex);
 
 
 console.log("you found it...")
+
+setInterval(() => {
+  console.log("It's eternity in there, and he hates it")
+}, 1000);
