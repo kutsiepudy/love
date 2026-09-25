@@ -92,3 +92,6 @@ if (startButton) {
 }
 
 loadSlide(slideIndex);
+
+
+console.log("you found it...")
