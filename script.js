@@ -85,6 +85,7 @@ if (startButton) {
     music.play()
       .catch(err => {
         console.log("Audio blocked or failed:", err);
+        console.log("The audio never worked, it did on the other stuff...")
       });
   
     startButton.style.display = "none";
@@ -95,7 +96,11 @@ loadSlide(slideIndex);
 
 
 console.log("you found it...")
-
-setInterval(() => {
+let timesSaid = 0
+const eternity = setInterval(() => {
   console.log("It's eternity in there, and he hates it")
+  timesSaid++;
+  if (timesSaid === 10) {
+    clearInterval(eternity)
+  }
 }, 1000);
